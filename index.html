@@ -1,0 +1,68 @@
+<Doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Questly</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Questly</h1>
+    <p>Создавай команды с нуля, знакомься, пугайся</p>
+
+    <h2>Наши квесты</h2>
+    <ul>
+      <li>На привязи - 80 минут, 12 человек</li>
+      <li>Взаперти - 80 минут, 12 человек</li>
+      <li>На дне - 105 минут, 10 человек</li>
+      <li>Извне - 60 минут, 8 человек</li>
+    </ul>
+
+    <h2>Забронировать</h2>
+    <form>
+      <p>
+        <label for="name">Ваше имя</label>
+        <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+      </p>
+
+      <p>
+        <label for="phone">Номер телефона</label>
+        <input type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67" required>
+      </p>
+
+      <p>
+        <label for="quest">Какой квест</label>
+        <select name="quest" id="quest">
+          <option value="">Выбери квест</option>
+          <option value="priviazi">На привязи</option>
+          <option value="vzaperti">Взаперти</option>
+          <option value="dno">На дне</option>
+          <option value="izvne">Извне</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="date">Дата</label>
+        <input type="date" id="date" name="date" required>
+      </p>
+
+      <p>
+        <label for="people">Сколько человек?</label>
+        <input type="number" id="people" name="people" min="1" max="12" value="2">
+      </p>
+
+      <p>
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">Согласен с правилами</label>
+      </p>
+
+      <button type="submit" class="book-btn">Забронировать</button>
+    </form>
+    <h2>Контакты</h2>
+    <ul>
+      <li>+79276802227</li>
+      <li><a href="https://chat.deepseek.com/a/chat/s/2b37c4c5-1695-442d-b307-d678152ac935">Наш Telegram</a></li>
+    </ul>
+    <script src="script.js"></script>
+  </body>
+</html>
+
