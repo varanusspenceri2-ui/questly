@@ -9,7 +9,7 @@ const questNames = {
     vzaperti: "Взаперти",
     dno: "На дне",
     izvne: "Извне"
-}
+};~~
 
 bookButton.addEventListener("click", function(event) {
     event.preventDefault(); 
